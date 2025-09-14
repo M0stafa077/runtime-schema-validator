@@ -37,13 +37,13 @@
     "validation",
     "json"
   ],
-  "author": "Mostafa Asaad<mostafa.asaad022@gmail.com>",
+  "author": "Mostafa Asaad <mostafa.asaad022@gmail.com>",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/m0stafa077/runtime-validator.git"
+    "url": "https://github.com/M0stafa077/runtime-schema-validator"
   },
-  "homepage": "https://github.com/m0stafa077/runtime-validator#readme",
+  "homepage": "https://github.com/M0stafa077/runtime-schema-validator#readme",
   "dependencies": {
     "zod": "^4.1.8",
     "zod-from-json-schema": "^0.5.0"
