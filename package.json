@@ -1,0 +1,64 @@
+{
+  "name": "runtime-schema-validator",
+  "version": "1.0.0",
+  "description": "A runtime JSON schema validator and converter using Zod.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "test": "ts-node src/test.ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepublishOnly": "npm run clean && npm run build",
+    "prepack": "npm run build",
+    "postpack": "npm run clean"
+  },
+  "keywords": [
+    "json-schema",
+    "validator",
+    "runtime",
+    "zod",
+    "typescript",
+    "schema",
+    "validation",
+    "json"
+  ],
+  "author": "Mostafa Asaad<mostafa.asaad022@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m0stafa077/runtime-validator.git"
+  },
+  "homepage": "https://github.com/m0stafa077/runtime-validator#readme",
+  "dependencies": {
+    "zod": "^4.1.8",
+    "zod-from-json-schema": "^0.5.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "prettier": "^3.2.5",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
