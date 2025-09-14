@@ -1,5 +1,5 @@
 {
-  "name": "runtime-schema-validator",
+  "name": "@m0stafa077/runtime-schema-validator",
   "version": "1.0.1",
   "description": "A runtime JSON schema validator and converter using Zod.",
   "main": "dist/index.js",
@@ -59,6 +59,7 @@
     "npm": ">=8.0.0"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
   }
 }
